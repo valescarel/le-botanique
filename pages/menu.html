@@ -4,31 +4,167 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@500&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="./photos/logo-le-botanique.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="shortcut icon" href="../photos/logo-le-botanique.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>LE BOTANIQUE</title>
 </head>
 <body>
     <header>
-        <section>
-            <link rel="stylesheet" href="./photos/logo-le-botanique.png">
-            <H2>LE BOTANIQUE</H2>
+        <section class="header__logo">
+            <img src="../photos/logo-le-botanique.png" alt="">
+            <h2 class="header__logo__titulo">LE BOTANIQUE</h2>
         </section>
-        <section>
+        <nav class="header__nav">
             <ul>
-                <li>Inicio</li>
-                <li>Nuestra historia</li>
-                <li>Menu</li>
-                <li>donde encontrarnos</li>
-                <li>Trabaja con nosotros</li>
+                <li><a class="heaader__nav--item" href="../index.html">INICIO</a></li>
+                <li><a class="heaader__nav--item" href="./sobre-nosotros.html">NOSOTROS</a></li>
+                <li><a class="heaader__nav--item" href="#menu">MENÚ</a></li>
+                <li><a class="heaader__nav--item" href="./donde-encontrarnos.html">DONDE ENCONTRARNOS</a></li>
+                <li><a class="heaader__nav--item" href="./trabaja-con-nosotros.html">OPORTUNIDADES</a></li>
             </ul>
-        </section>
+        </nav>
     </header>
     <main>
-        <h1>LE BOTANIQUE</h1>
+        <h1 id="menu">MENÚ</h1>
+        <nav class="main__guiaMenu">
+            <ul>
+                <li><a href="#cafe">CAFÉ</a></li>
+                <li><a href="#cosasDulces">COSAS DULCES</a></li>
+                <li><a href="#cosasSaladas">COSAS SALADAS</a></li>
+                <li><a href="#almuerzoYCena">ALMUERZO Y CENA</a></li>
+                <li><a href="#bebidas">BEBIDAS</a></li>
+            </ul>
+        </nav>
+        <section class="main__menu">
+            <h3 id="cafe">CAFÉ</h3>
+            <p>Agrandalo por $200</p>
+            <div class="contenedorTarjetas">
+                <div class="tarjetaMenu">
+                    <h4>Latte</h4>
+                    <p>Uno o dos shots de espresso con leche al vapor y una fina capa de leche espumosa encima.</p>
+                    <img src="../photos/cafe-le-botanique.jpeg" alt="Latte">
+                    <p>$500</p>
+                    <button>Agregar</button>
+                </div>
+                <div class="tarjetaMenu">
+                    <h4>Caramel Machiatto</h4>
+                    <p>Leche al vapor manchada con espresso y un toque de vainilla, cubierta con un característico dibujo de caramelo.</p>
+                    <img src="../photos/cafe-le-botanique.jpeg" alt="Latte">
+                    <p>$500</p>
+                    <button>Agregar</button>
+                </div>
+                <div class="tarjetaMenu">
+                    <h4>Latte</h4>
+                    <p>Uno o dos shots de espresso con leche al vapor y una fina capa de leche espumosa encima.</p>
+                    <img src="../photos/cafe-le-botanique.jpeg" alt="Latte">
+                    <p>$500</p>
+                    <button>Agregar</button>
+                </div>
+                <div class="tarjetaMenu">
+                    <h4>Caramel Machiatto</h4>
+                    <p>Leche al vapor manchada con espresso y un toque de vainilla, cubierta con un característico dibujo de caramelo.</p>
+                    <img src="../photos/cafe-le-botanique.jpeg" alt="Latte">
+                    <p>$500</p>
+                    <button>Agregar</button>
+                </div>
+                <div class="tarjetaMenu">
+                    <h4>Latte</h4>
+                    <p>Uno o dos shots de espresso con leche al vapor y una fina capa de leche espumosa encima.</p>
+                    <img src="../photos/cafe-le-botanique.jpeg" alt="Latte">
+                    <p>$500</p>
+                    <button>Agregar</button>
+                </div>
+                <div class="tarjetaMenu">
+                    <h4>Caramel Machiatto</h4>
+                    <p>Leche al vapor manchada con espresso y un toque de vainilla, cubierta con un característico dibujo de caramelo.</p>
+                    <img src="../photos/cafe-le-botanique.jpeg" alt="Latte">
+                    <p>$500</p>
+                    <button>Agregar</button>
+                </div>
+            </div>
+        </section>
+        <section class="main__menu">
+            <h3 id="cosasDulces">COSAS DULCES</h3>
+            <p>Precio por porción</p>
+            <div class="contenedorTarjetas">
+                <div class="tarjetaMenu">
+                    <h4>Tarta de chocolate</h4>
+                    <p>Tarta de masa quebrada con relleno de chocolate.</p>
+                    <img src="../photos/tarta-chocolate-le-botanique.webp" alt="TartaChocolate">
+                    <p>$500</p>
+                    <button>Agregar</button>
+                </div>
+                <div class="tarjetaMenu">
+                    <h4>Torta de vainilla</h4>
+                    <p>Bizcuchuelo de vainilla relleno con salsa de frutos rojos y cubierta de buttercream.</p>
+                    <img src="../photos/torta-vainilla-le-botanique.jpeg" alt="TortaVainilla">
+                    <p>$500</p>
+                    <button>Agregar</button>
+                </div>
+            </div>
+        </section>
+        <section class="main__menu">
+            <h3 id="cosasSaladas">COSAS SALADAS</h3>
+            <div class="contenedorTarjetas">
+                <div class="tarjetaMenu">
+                    <h4>Bagel con salmón ahumado</h4>
+                    <p>Bagel con queso crema relleno de salmon ahumado, huevo y palta.</p>
+                    <img src="../photos/bagels-de-salmon-le-botanique.avif" alt="BagelSalmon">
+                    <p>$500</p>
+                    <button>Agregar</button>
+                </div>
+                <div class="tarjetaMenu">
+                    <h4>Avocado Toast</h4>
+                    <p>Tostada en pan de masa madre blanco o integral, con palta. </p>
+                    <img src="../photos/avocado-toast-le-botanique.jpg" alt="AvoToast">
+                    <p>$500</p>
+                    <button>Agregar</button>
+                </div>
+            </div>
+        </section>
+        <section class="main__menu">
+            <h3 id="almuerzoYCena">ALMUERZO Y CENA</h3>
+            <p>Solo se sirven de 12:00 a 15:00</p>
+            <div class="contenedorTarjetas">
+                <div class="tarjetaMenu">
+                    <h4>Ensalada leva-mite</h4>
+                    <p>Ensalada de mix de hojas, queso feta, crutons, nueces y un aderezo de queso crema, oliva y levadura</p>
+                    <img src="../photos/ensalada-levamite-le-botanique.jpg" alt="EnsaladaLevaMite">
+                    <p>$500</p>
+                    <button>Agregar</button>
+                </div>
+                <div class="tarjetaMenu">
+                    <h4>Falafel</h4>
+                    <p>Falafel con dip de queso crema</p>
+                    <img src="../photos/falafel-le-botanique.webp" alt="Falafel">
+                    <p>$500</p>
+                    <button>Agregar</button>
+                </div>
+            </div>
+        </section>
+        <section class="main__menu">
+            <h3 id="bebidas">BEBIDAS</h3>
+            <div class="contenedorTarjetas">
+                <div class="tarjetaMenu">
+                    <h4>Jugos exprimidos</h4>
+                    <p>De frutilla, naranja, durazno, pera, pomelo, limon o combinados.</p>
+                    <img src="../photos/jugos-le-botanique.webp" alt="JugosExprimidos">
+                    <p>$500</p>
+                    <button>Agregar</button>
+                </div>
+                <div class="tarjetaMenu">
+                    <h4>Gaseosa</h4>
+                    <p>Linea Coca Cola, en lata de 354cc</p>
+                    <img src="../photos/gaseosa-le-botanique.jpg" alt="Gaseosas">
+                    <p>$500</p>
+                    <button>Agregar</button>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
-        LE BOTANIQUE 2023 ©
+        <p>LE BOTANIQUE 2023 ©</p>
+        <p>Volver a Inicio</p>
     </footer>
 </body>
 </html>

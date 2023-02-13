@@ -1,4 +1,137 @@
 *{
     margin: 0px;
+    text-decoration: none;
 }
+
+/*general*/
+
+header{
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+    border-bottom: 2px solid #4b4b25;
+}
+main{
+    grid-area: main;
+    border-top: 5px;
+}
+footer{
+    padding: 5px 20px;
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    border-top: 2px solid #4b4b25;
+}
+
+footer a{
+    color: #4b4b25;
+}
+
+footer p{
+    color: #4b4b25;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 65px 2000px 30px;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer";
+}
+
+
+.header__logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header__logo img{
+    height: 50px;
+}
+
+.header__logo h2{
+    font-size: 30px;
+    color: #4b4b25;
+}
+
+.header__nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+}
+.heaader__nav--item{
+    color: #4b4b25;
+    padding: 10px;
+    border-left: 1px solid #4b4b25;
+}
+
+
+/* index */
+
+.main__index{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+}
+
+.main__index h1{
+    font-size: 80px;
+}
+
+.main__index h3{
+    font-size: 25px;
+    letter-spacing: 43.5px;
+}
+
+/* nosotros */
+
+
+/*menu*/
+.main__menu{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.contenedorTarjetas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.tarjetaMenu{
+    width: 300px;
+    height: 350px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tarjetaMenu img{
+    width: 300px;
+}
+
+/*donde encontrarnos*/
+
+
+/*oportunidades*/
+
 

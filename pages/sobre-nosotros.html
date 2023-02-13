@@ -4,31 +4,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@500&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="./photos/logo-le-botanique.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="shortcut icon" href="../photos/logo-le-botanique.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>LE BOTANIQUE</title>
 </head>
 <body>
     <header>
-        <section>
-            <link rel="stylesheet" href="./photos/logo-le-botanique.png">
-            <H2>LE BOTANIQUE</H2>
+        <section class="header__logo">
+            <img src="../photos/logo-le-botanique.png" alt="">
+            <h2 class="header__logo__titulo">LE BOTANIQUE</h2>
         </section>
-        <section>
+        <nav class="header__nav">
             <ul>
-                <li>Inicio</li>
-                <li>Nuestra historia</li>
-                <li>Menu</li>
-                <li>donde encontrarnos</li>
-                <li>Trabaja con nosotros</li>
+                <li><a class="heaader__nav--item" href="../index.html">INICIO</a></li>
+                <li><a class="heaader__nav--item" href="#nosotros">NOSOTROS</a></li>
+                <li><a class="heaader__nav--item" href="./menu.html">MENÚ</a></li>
+                <li><a class="heaader__nav--item" href="./donde-encontrarnos.html">DONDE ENCONTRARNOS</a></li>
+                <li><a class="heaader__nav--item" href="./trabaja-con-nosotros.html">OPORTUNIDADES</a></li>
             </ul>
-        </section>
+        </nav>
     </header>
     <main>
-        <h1>LE BOTANIQUE</h1>
+        <h1 id="nosotros">NOSOTROS</h1>
+        <section>
+            <h2>Nuestra historia</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, aliquid quas ullam nisi nostrum nobis accusamus aperiam quisquam temporibus in et animi voluptatibus doloremque eos quae. Aperiam dolorum quam ipsam?</p>
+        </section>
+        <section>
+            <h2>Nuestra misión</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero perspiciatis sequi, esse ipsa rem fuga recusandae sed quo sit? Obcaecati perferendis adipisci corrupti aliquam explicabo quidem officia illum fugit vero!</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/CVRmY0jg2eE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </section>
     </main>
     <footer>
-        LE BOTANIQUE 2023 ©
+        <p>LE BOTANIQUE 2023 ©</p>
+        <p>Volver a Inicio</p>
     </footer>
 </body>
 </html>
