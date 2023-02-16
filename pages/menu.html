@@ -5,37 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@500&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../photos/logo-le-botanique.png" type="image/x-icon">
+    
     <link rel="stylesheet" href="../style/style.css">
     <title>LE BOTANIQUE</title>
 </head>
 <body>
-    <header>
-        <section class="header__logo">
+    <header id="home">
+        <a class="header__logo" href="../index.html">
             <img src="../photos/logo-le-botanique.png" alt="">
             <h2 class="header__logo__titulo">LE BOTANIQUE</h2>
-        </section>
+        </a>
         <nav class="header__nav">
             <ul>
                 <li><a class="heaader__nav--item" href="../index.html">INICIO</a></li>
                 <li><a class="heaader__nav--item" href="./sobre-nosotros.html">NOSOTROS</a></li>
                 <li><a class="heaader__nav--item" href="#menu">MENÚ</a></li>
-                <li><a class="heaader__nav--item" href="./donde-encontrarnos.html">DONDE ENCONTRARNOS</a></li>
+                <li><a class="heaader__nav--item" href="./donde-encontrarnos.html">CONTACTO</a></li>
                 <li><a class="heaader__nav--item" href="./trabaja-con-nosotros.html">OPORTUNIDADES</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="main__menu">
         <h1 id="menu">MENÚ</h1>
         <nav class="main__guiaMenu">
             <ul>
-                <li><a href="#cafe">CAFÉ</a></li>
-                <li><a href="#cosasDulces">COSAS DULCES</a></li>
-                <li><a href="#cosasSaladas">COSAS SALADAS</a></li>
-                <li><a href="#almuerzoYCena">ALMUERZO Y CENA</a></li>
-                <li><a href="#bebidas">BEBIDAS</a></li>
+                <li><a class="main__guiaMenu--item" href="#cafe">CAFÉ</a></li>
+                <li><a class="main__guiaMenu--item" href="#cosasDulces">COSAS DULCES</a></li>
+                <li><a class="main__guiaMenu--item" href="#cosasSaladas">COSAS SALADAS</a></li>
+                <li><a class="main__guiaMenu--item" href="#almuerzoYCena">ALMUERZO Y CENA</a></li>
+                <li><a class="main__guiaMenu--item" href="#bebidas">BEBIDAS</a></li>
             </ul>
         </nav>
-        <section class="main__menu">
+        <section class="main__productos">
             <h3 id="cafe">CAFÉ</h3>
             <p>Agrandalo por $200</p>
             <div class="contenedorTarjetas">
@@ -83,7 +84,7 @@
                 </div>
             </div>
         </section>
-        <section class="main__menu">
+        <section class="main__productos">
             <h3 id="cosasDulces">COSAS DULCES</h3>
             <p>Precio por porción</p>
             <div class="contenedorTarjetas">
@@ -103,7 +104,7 @@
                 </div>
             </div>
         </section>
-        <section class="main__menu">
+        <section class="main__productos">
             <h3 id="cosasSaladas">COSAS SALADAS</h3>
             <div class="contenedorTarjetas">
                 <div class="tarjetaMenu">
@@ -122,7 +123,7 @@
                 </div>
             </div>
         </section>
-        <section class="main__menu">
+        <section class="main__productos">
             <h3 id="almuerzoYCena">ALMUERZO Y CENA</h3>
             <p>Solo se sirven de 12:00 a 15:00</p>
             <div class="contenedorTarjetas">
@@ -142,7 +143,7 @@
                 </div>
             </div>
         </section>
-        <section class="main__menu">
+        <section class="main__productos">
             <h3 id="bebidas">BEBIDAS</h3>
             <div class="contenedorTarjetas">
                 <div class="tarjetaMenu">
@@ -164,7 +165,7 @@
     </main>
     <footer>
         <p>LE BOTANIQUE 2023 ©</p>
-        <p>Volver a Inicio</p>
+        <a href="#home">Volver arriba</a>
     </footer>
 </body>
 </html>

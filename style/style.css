@@ -100,11 +100,33 @@ body{
 
 
 /*menu*/
+
 .main__menu{
+    margin: 20px;
+}
+
+.main__productos{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin: 10px;
+}
+
+.main__guiaMenu ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    margin: 10px 0px;
+}
+
+.main__guiaMenu--item{
+    color: #4b4b25;
+    padding: 5px 10px;
+    border-left: 1px solid #4b4b25;
+}
+
+.main__productos h3{
+    font-size: 25px;
 }
 
 .contenedorTarjetas{
@@ -116,17 +138,27 @@ body{
 .tarjetaMenu{
     width: 300px;
     height: 350px;
-    border: 2px solid black;
+    border: 2px solid #78785f;
     border-radius: 10px;
     padding: 10px;
     margin: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    -webkit-box-shadow: 10px 10px 10px 0px rgba(75,75,37,0.77);
+    -moz-box-shadow: 10px 10px 10px 0px rgba(75,75,37,0.77);
+    box-shadow: 10px 10px 10px 0px rgba(75,75,37,0.77);
+}
+
+.tarjetaMenu h4{
+    font-size: 18px;
 }
 
 .tarjetaMenu img{
     width: 300px;
+    height: 200px;
+    object-fit: cover;
+    margin: 10px 0px;
 }
 
 /*donde encontrarnos*/
