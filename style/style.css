@@ -1,12 +1,31 @@
 *{
     margin: 0px;
     text-decoration: none;
+    font-family: "Abhaya Libre";
 }
+
+h1{
+    font-weight: bold;
+}
+
+h2{
+    font-weight: bold;
+}
+h3{
+    font-weight: bold;
+}
+h4{
+    font-weight: bold;
+}
+h5{
+    font-weight: bold;
+}
+
+
 
 /*general*/
 
 header{
-    grid-area: header;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -14,13 +33,12 @@ header{
     padding: 5px 20px;
     border-bottom: 2px solid #4b4b25;
 }
+
 main{
-    grid-area: main;
     border-top: 5px;
 }
 footer{
     padding: 5px 20px;
-    grid-area: footer;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -31,27 +49,19 @@ footer{
 
 footer a{
     color: #4b4b25;
+    text-decoration: none;
 }
 
 footer p{
     color: #4b4b25;
+    margin: 0px;
 }
-
-body{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 65px 2000px 30px;
-    grid-template-areas: 
-    "header header header"
-    "main main main"
-    "footer footer footer";
-}
-
 
 .header__logo{
     display: flex;
     flex-direction: row;
     align-items: center;
+    text-decoration: none;
 }
 
 .header__logo img{
@@ -59,8 +69,10 @@ body{
 }
 
 .header__logo h2{
+    font-weight: bold;
     font-size: 30px;
     color: #4b4b25;
+    margin: 0px;
 }
 
 .header__nav ul{
@@ -68,15 +80,20 @@ body{
     display: flex;
     flex-direction: row;
     font-size: 20px;
+    margin: 0px;
 }
 .heaader__nav--item{
     color: #4b4b25;
     padding: 10px;
     border-left: 1px solid #4b4b25;
+    text-decoration: none;
 }
 
 
 /* index */
+.container-main-index{
+    height: 1000px;
+}
 
 .main__index{
     display: flex;
@@ -93,7 +110,7 @@ body{
 
 .main__index h3{
     font-size: 25px;
-    letter-spacing: 43.5px;
+    letter-spacing: 38px;
 }
 
 /* nosotros */
@@ -115,7 +132,7 @@ body{
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    font-size: 20px;
+    font-size: 18px;
     margin: 10px 0px;
 }
 
@@ -123,21 +140,16 @@ body{
     color: #4b4b25;
     padding: 5px 10px;
     border-left: 1px solid #4b4b25;
+    text-decoration: none;
 }
 
 .main__productos h3{
     font-size: 25px;
 }
 
-.contenedorTarjetas{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.tarjetaMenu{
-    width: 300px;
-    height: 350px;
+.card{
+    width: 100%;
+    height: 450px;
     border: 2px solid #78785f;
     border-radius: 10px;
     padding: 10px;
@@ -150,6 +162,36 @@ body{
     box-shadow: 10px 10px 10px 0px rgba(75,75,37,0.77);
 }
 
+.card-img-top{
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-text{
+    height: 90px;
+    margin-bottom: 10px;
+}
+
+.card-price{
+    margin: 10px 0px;
+}
+
+.btn-primary{
+    background-color: #4b4b25;
+    color: white;
+    border: #4b4b25
+}
+
+.btn-primary:hover{
+    background-color: white;
+    color: #4b4b25;
+    border: 1px solid #4b4b25;
+    transform: translateY(-3px);
+    transition: 0.3s ease;
+}
+
+
+/*
 .tarjetaMenu h4{
     font-size: 18px;
 }
@@ -160,6 +202,7 @@ body{
     object-fit: cover;
     margin: 10px 0px;
 }
+*/
 
 /*donde encontrarnos*/
 
