@@ -13,21 +13,55 @@
     <div class="container-fluid">
         <div class="row">
             <header id="home">
-                <div class="col-3">
-                    <a class="header__logo" href="../index.html">
+                <div class="col-lg-4 col-md-4 col-auto-xl-4 col-auto-xxl-4">
+                    <a class="header__logo" href="#home">
                         <img src="../photos/logo-le-botanique.png" alt="">
                         <h2 class="header__logo__titulo">LE BOTANIQUE</h2>
                     </a>
                 </div>
-                <div class="col-auto-9">
+                <div class="header__nav--desktop col-auto-lg-8 col-auto-md-8 col-auto-xl-8 col-auto-xxl-8">
                     <nav class="header__nav">
                         <ul>
                             <li><a class="heaader__nav--item" href="../index.html">INICIO</a></li>
                             <li><a class="heaader__nav--item" href="./sobre-nosotros.html">NOSOTROS</a></li>
-                            <li><a class="heaader__nav--item" href="./menu.html">MENÚ</a></li>
+                            <li><a class="heaader__nav--item" href="#menu">MENÚ</a></li>
                             <li><a class="heaader__nav--item" href="./donde-encontrarnos.html">CONTACTO</a></li>
                             <li><a class="heaader__nav--item" href="./trabaja-con-nosotros.html">OPORTUNIDADES</a></li>
                         </ul>
+                    </nav>
+                </div>
+                <div class="col-auto-3 header__nav--mobile">
+                    <nav class="navbar bg-body-tertiary">
+                        <div class="container-fluid">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                                <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">LE BOTANIQUE</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="./sobre-nosotros.html">NOSOTROS</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="#menu">MENU</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="./donde-encontrarnos.html">CONTACTO</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="./trabaja-con-nosotros.html">OPORTUNIDADES</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </nav>
                 </div>
             </header>
@@ -36,18 +70,20 @@
     <main class="main__menu">
         <div class="container-fluid">
             <div class="row">
-                <h1 id="menu">MENÚ</h1>
-            </div>
-            <div class="row">
-                <nav class="main__guiaMenu">
-                    <ul>
-                        <li><a class="main__guiaMenu--item" href="#cafe">CAFÉ</a></li>
-                        <li><a class="main__guiaMenu--item" href="#cosasDulces">COSAS DULCES</a></li>
-                        <li><a class="main__guiaMenu--item" href="#cosasSaladas">COSAS SALADAS</a></li>
-                        <li><a class="main__guiaMenu--item" href="#almuerzoYCena">ALMUERZO Y CENA</a></li>
-                        <li><a class="main__guiaMenu--item" href="#bebidas">BEBIDAS</a></li>
-                    </ul>
-                </nav>
+                <div class="col-12">
+                    <h1 id="menu">MENÚ</h1>
+                </div>
+                <div class="col-12">
+                    <nav class="main__guiaMenu">
+                        <ul>
+                            <li><a class="main__guiaMenu--item" href="#cafe">CAFÉ</a></li>
+                            <li><a class="main__guiaMenu--item" href="#cosasDulces">DULCE</a></li>
+                            <li><a class="main__guiaMenu--item" href="#cosasSaladas">SALADO</a></li>
+                            <li><a class="main__guiaMenu--item" href="#almuerzoYCena">ALMUERZO Y CENA</a></li>
+                            <li><a class="main__guiaMenu--item" href="#bebidas">BEBIDAS</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
         <section class="main__productos">
@@ -63,6 +99,7 @@
                             <div class="card-body">
                             <h5 class="card-title">Latte</h5>
                             <p class="card-text">Uno o dos shots de espresso con leche al vapor y una fina capa de leche espumosa encima.</p>
+                            <p class="card-price">$500</p>
                             <button class="btn btn-primary align-bottom">Agregar</button>
                             </div>
                         </div>
@@ -84,6 +121,7 @@
                             <div class="card-body">
                             <h5 class="card-title">Latte</h5>
                             <p class="card-text">Uno o dos shots de espresso con leche al vapor y una fina capa de leche espumosa encima.</p>
+                            <p class="card-price">$500</p>
                             <button class="btn btn-primary">Agregar</button>
                             </div>
                         </div>
@@ -94,6 +132,7 @@
                             <div class="card-body">
                             <h5 class="card-title">Latte</h5>
                             <p class="card-text">Uno o dos shots de espresso con leche al vapor y una fina capa de leche espumosa encima.</p>
+                            <p class="card-price">$500</p>
                             <button class="btn btn-primary">Agregar</button>
                             </div>
                         </div>
@@ -104,6 +143,7 @@
                             <div class="card-body">
                             <h5 class="card-title">Latte</h5>
                             <p class="card-text">Uno o dos shots de espresso con leche al vapor y una fina capa de leche espumosa encima.</p>
+                            <p class="card-price">$500</p>
                             <button class="btn btn-primary">Agregar</button>
                             </div>
                         </div>
@@ -118,6 +158,7 @@
                             <div class="card-body">
                             <h5 class="card-title">Tarta de Chocolate</h5>
                             <p class="card-text">Tarta de masa quebrada con relleno de fudge de chocolate</p>
+                            <p class="card-price">$500</p>
                             <button class="btn btn-primary">Agregar</button>
                             </div>
                         </div>
@@ -128,6 +169,7 @@
                             <div class="card-body">
                             <h5 class="card-title">Torta de vainilla</h5>
                             <p class="card-text">Bizcuchuelo de vainilla relleno con salsa de frutos rojos y cubierta de buttercream.</p>
+                            <p class="card-price">$500</p>
                             <button class="btn btn-primary">Agregar</button>
                             </div>
                         </div>
@@ -141,6 +183,7 @@
                             <div class="card-body">
                             <h5 class="card-title">Bagel con salmón ahumado</h5>
                             <p class="card-text">Bagel con queso crema relleno de salmon ahumado, huevo y palta.</p>
+                            <p class="card-price">$500</p>
                             <button class="btn btn-primary">Agregar</button>
                             </div>
                         </div>
@@ -151,6 +194,7 @@
                             <div class="card-body">
                             <h5 class="card-title">Avocado Toast</h5>
                             <p class="card-text">Tostada en pan de masa madre blanco o integral, untado en queso crema con palta.</p>
+                            <p class="card-price">$500</p>
                             <button class="btn btn-primary align-bottom">Agregar</button>
                             </div>
                         </div>
@@ -165,6 +209,7 @@
                             <div class="card-body">
                             <h5 class="card-title">Ensalada leva-mite</h5>
                             <p class="card-text">Ensalada de mix de hojas, queso feta, crutons, nueces y un aderezo de queso crema, oliva y levadura</p>
+                            <p class="card-price">$500</p>
                             <button class="btn btn-primary">Agregar</button>
                             </div>
                         </div>
@@ -175,40 +220,52 @@
                             <div class="card-body">
                             <h5 class="card-title">Falafel</h5>
                             <p class="card-text">Falafel con dip de queso crema</p>
+                            <p class="card-price">$500</p>
+                            <button class="btn btn-primary align-bottom">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3 id="bebidas" class="main__secciones">BEBIDAS</h3>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="../photos/jugos-le-botanique.webp" class="card-img-top" alt="Jugos">
+                            <div class="card-body">
+                            <h5 class="card-title">Jugos exprimidos</h5>
+                            <p class="card-text">De frutilla, naranja, durazno, pera, pomelo, limon o combinados.</p>
+                            <p class="card-price">$500</p>
+                            <button class="btn btn-primary">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="../photos/gaseosa-le-botanique.jpg"" class="card-img-top" alt="Gaseosa">
+                            <div class="card-body">
+                            <h5 class="card-title">Gaseosa</h5>
+                            <p class="card-text">Linea Coca Cola, en lata de 354cc</p>
+                            <p class="card-price">$500</p>
                             <button class="btn btn-primary align-bottom">Agregar</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        <section class="main__productos">
-            <h3 id="bebidas" class="main__secciones">BEBIDAS</h3>
-            <div class="contenedorTarjetas">
-                <div class="tarjetaMenu">
-                    <h4>Jugos exprimidos</h4>
-                    <p>De frutilla, naranja, durazno, pera, pomelo, limon o combinados.</p>
-                    <img src="../photos/jugos-le-botanique.webp" alt="JugosExprimidos">
-                    <p>$500</p>
-                    <button>Agregar</button>
-                </div>
-                <div class="tarjetaMenu">
-                    <h4>Gaseosa</h4>
-                    <p>Linea Coca Cola, en lata de 354cc</p>
-                    <img src="../photos/gaseosa-le-botanique.jpg" alt="Gaseosas">
-                    <p>$500</p>
-                    <button>Agregar</button>
-                </div>
-            </div>
         </section>
     </main>
-    <div class="container-fluid">
-        <div class="row">
-            <footer>
-                <p>LE BOTANIQUE 2023 ©</p>
-                <a href="#home">Volver arriba</a>
-            </footer>
+    <footer>
+        <div class="container-flex">
+            <div class="row">
+                <div class="col-7">
+                    <p>LE BOTANIQUE 2023 ©</p>
+                </div>
+                <div class="col-5 footer__volver">
+                    <a href="#menu">VOLVER ARRIBA</a>
+                </div>
+            </div>
         </div>
-    </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
