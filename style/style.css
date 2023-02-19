@@ -80,11 +80,16 @@ footer p{
     font-size: 20px;
     margin: 0px;
 }
-.heaader__nav--item{
+
+.header__nav--item{
     color: #4b4b25;
     padding: 10px;
     border-left: 1px solid #4b4b25;
     text-decoration: none;
+}
+
+.header__nav--item:hover{
+    font-weight: bold;
 }
 
 @media(max-width:767px){
@@ -112,7 +117,16 @@ footer p{
 /* index */
 .container-main-index{
     height: 1000px;
+    background-image: url(../photos/background-2-le-botanique.png);
+    background-repeat: repeat-x;
 }
+
+@media(max-width:767px){
+    .container-main-index{
+        height: 850px;
+    }
+}
+
 
 .main__index{
     display: flex;
@@ -120,6 +134,8 @@ footer p{
     flex-direction: column;
     align-content: center;
 }
+
+
 
 .main__index h1{
     font-size: 80px;
@@ -187,11 +203,17 @@ footer p{
     }
 }
 
+
 .main__guiaMenu--item{
     color: #4b4b25;
     padding: 5px 10px;
     border-left: 1px solid #4b4b25;
     text-decoration: none;
+}
+
+
+.main__guiaMenu--item:hover{
+    font-weight: bold;
 }
 
 @media(max-width:767px){
