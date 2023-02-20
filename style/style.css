@@ -289,6 +289,14 @@ footer p{
 
 /*donde encontrarnos*/
 
+.main__donde--veni{
+    margin-bottom: 12px;
+}
+
+.main__donde--img{
+    height: 90px;
+}
+
 
 /*oportunidades*/
 
