@@ -223,7 +223,7 @@ footer p{
 
 @media(max-width:767px){
     .main__guiaMenu--item{
-        padding: 5px;
+        padding: 3px;
     }
 }
 
