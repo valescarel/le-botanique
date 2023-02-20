@@ -67,10 +67,15 @@ footer p{
 }
 
 .header__logo h2{
-    font-weight: bold;
     font-size: 30px;
     color: #4b4b25;
     margin: 0px;
+}
+
+@media(max-width:767px){
+    .header__logo h2{
+        font-size: 25px;
+        }
 }
 
 .header__nav ul{
