@@ -59,6 +59,7 @@ header{
             }
             div{
                 nav{
+                    --bs-navbar-padding-y: 0rem;
                     --bs-bg-opacity: 0 !important; 
                     background-color: $background-color;
                     div{

@@ -53,6 +53,7 @@ header {
       header div div div nav ul {
         display: none; } }
   header div div div nav {
+    --bs-navbar-padding-y: 0rem;
     --bs-bg-opacity: 0 !important;
     background-color: transparent; }
     header div div div nav div {
@@ -78,11 +79,11 @@ footer {
       color: #4b4b25;
       text-decoration: none; }
 
-main div {
+.main__index div {
   height: calc(100vh - 67.2px - 37px); }
-  main div div {
+  .main__index div div {
     margin: 0px; }
-    main div div div {
+    .main__index div div div {
       position: relative;
       display: flex;
       flex-wrap: wrap;
@@ -92,22 +93,22 @@ main div {
       align-items: center;
       padding-left: 0px;
       padding-right: 0px; }
-      main div div div h1 {
+      .main__index div div div h1 {
         font-size: 80px; }
         @media (max-width: 767px) {
-          main div div div h1 {
+          .main__index div div div h1 {
             font-size: 48px; } }
-      main div div div h3 {
+      .main__index div div div h3 {
         font-size: 25px;
         letter-spacing: 31.5px;
         background-color: #68534281;
         padding-left: 31.5px; }
         @media (max-width: 767px) {
-          main div div div h3 {
+          .main__index div div div h3 {
             padding-left: 17px;
             font-size: 25px;
             letter-spacing: 17px; } }
-      main div div div img {
+      .main__index div div div img {
         position: absolute;
         top: 0;
         z-index: -1;
@@ -116,3 +117,6 @@ main div {
         width: calc(100vw - 24px);
         object-fit: cover;
         object-position: center; }
+
+.main__nosotros {
+  background-color: blueviolet; }
