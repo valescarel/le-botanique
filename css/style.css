@@ -25,15 +25,6 @@ h5{
 
 /*general*/
 
-header{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5px 20px;
-    border-bottom: 2px solid #4b4b25;
-}
-
 footer{
     padding: 5px 20px;
     font-size: 18px;
@@ -55,62 +46,12 @@ footer p{
 }
 
 
-.header__logo{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-decoration: none;
-}
 
-.header__logo img{
-    height: 50px;
-}
-
-.header__logo h2{
-    font-size: 30px;
-    color: #4b4b25;
-    margin: 0px;
-}
-
-@media(max-width:767px){
-    .header__logo h2{
-        font-size: 25px;
-        }
-}
-
-.header__nav ul{
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    font-size: 20px;
-    margin: 0px;
-}
-
-.header__nav--item{
-    color: #4b4b25;
-    padding: 10px;
-    border-left: 1px solid #4b4b25;
-    text-decoration: none;
-}
-
-.header__nav--item:hover{
-    font-weight: bold;
-}
 
 @media(max-width:767px){
     .header__nav--desktop{
         display: none;
     }
-}
-
-.bg-body-tertiary{
-    --bs-bg-opacity: 0;
-    background-color: transparent;
-}
-
-.navbar-toggler{
-    color: #4b4b25;
-    --bs-navbar-toggler-border-color: #4b4b25;
 }
 
 @media(min-width:768px){
@@ -119,50 +60,17 @@ footer p{
     }
 }
 
+
+.navbar-toggler{
+    color: #4b4b25;
+    --bs-navbar-toggler-border-color: #4b4b25;
+}
+
+
 /* index */
-.container-main-index{
-    height: 1000px;
-    background-image: url(../photos/background-2-le-botanique.png);
-    background-repeat: repeat-x;
-}
-
-@media(max-width:767px){
-    .container-main-index{
-        height: 850px;
-    }
-}
-
-
-.main__index{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: center;
-}
 
 
 
-.main__index h1{
-    font-size: 80px;
-}
-
-@media(max-width:767px){
-    .main__index h1{
-        font-size: 48px;
-    }
-}
-
-.main__index h3{
-    font-size: 25px;
-    letter-spacing: 38px;
-}
-
-@media(max-width:767px){
-    .main__index h3{
-        font-size: 25px;
-        letter-spacing: 17px;
-    }
-}
 
 /* nosotros */
 

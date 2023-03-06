@@ -1,0 +1,23 @@
+footer{
+    padding: 5px 20px;
+    font-size: 18px;
+    border-top: 2px solid $secondary-color;
+    div{
+        div{
+            div{
+                p{
+                    color: $secondary-color;
+                    margin: 0px;
+                    text-align: left;
+                }
+            }
+            div{
+                text-align: right;
+                a{
+                    color: $secondary-color;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,78 @@
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+    border-bottom: 2px solid $secondary-color;
+    div{
+        div{
+            div{
+                a{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    text-decoration: none;
+                    img{
+                        height: 50px;
+                    }
+                    h2{
+                        font-size: 30px;
+                        color: $secondary-color;
+                        margin: 0px;
+                        @media(max-width:$max-width){
+                            font-size: 25px;
+                        }
+                    }
+                }
+            }
+            div{
+                nav{
+                    ul{
+                        list-style-type: none;
+                        display: flex;
+                        flex-direction: row;
+                        font-size: 20px;
+                        margin: 0px;
+                        justify-content: flex-end;
+                        li{
+                            padding: 10px;
+                            border-left: 1px solid;
+                            border-color: $secondary-color;
+                            text-decoration: none;
+                            &:hover{
+                                font-weight: bold;
+                                transform: translateY(3px);
+                            }
+                            &:nth-child(1){
+                                border-width: 0px;
+                            }
+                            a{
+                                color: $secondary-color;
+                            }
+                        }
+                        @media(max-width:$max-width){
+                            display: none;
+                        }
+                    }
+                }
+            }
+            div{
+                nav{
+                    --bs-bg-opacity: 0 !important; 
+                    background-color: $background-color;
+                    div{
+                        justify-content: flex-end !important;
+                        .navbar-toggler{
+                            --bs-navbar-color: $secondary-color;
+                            --bs-border-width: 2px;
+                            @media(min-width:$min-width){
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

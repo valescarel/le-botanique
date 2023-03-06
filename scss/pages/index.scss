@@ -1,0 +1,47 @@
+main{
+    div{
+        height: calc(100vh - 67.2px - 37px);
+        div{
+            margin: 0px;
+            div{
+                position: relative;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-content: center;
+                justify-content: center;
+                align-items: center;
+                padding-left: 0px;
+                padding-right: 0px;
+                h1{
+                    font-size: 80px;
+                    @media(max-width:767px){
+                        font-size: 48px;
+                    }
+                }
+                h3{
+                    font-size: 25px;
+                    letter-spacing: 31.5px;
+                    background-color: $tertiary-color;
+                    padding-left: 31.5px;
+                    @media(max-width:767px){
+                        padding-left: 17px;
+                        font-size: 25px;
+                        letter-spacing: 17px;
+                    }
+                }
+                img{
+                    position: absolute;
+                    top: 0;
+                    z-index: -1;
+                    opacity: 0.8;
+                    height: 60vh;
+                    width: calc(100vw - 24px);
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+            
+        }
+    }
+}
