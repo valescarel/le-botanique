@@ -3,8 +3,7 @@
         nav{
             ul{
                 list-style-type: none;
-                display: flex;
-                flex-direction: row;
+                @include flex-row;
                 font-size: 18px;
                 margin: 10px 0px;
                 padding: 0px;
@@ -30,8 +29,7 @@
         }
     }
     section{
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
         flex-wrap: wrap;
         div{
             div{
@@ -49,8 +47,7 @@
                         border-radius: 10px;
                         padding: 10px;
                         margin: 10px;
-                        display: flex;
-                        flex-direction: column;
+                        @include flex-column;
                         align-items: center;
                         -webkit-box-shadow: $box-shadow;
                         -moz-box-shadow: $box-shadow;
@@ -68,16 +65,7 @@
                                 margin: 10px 0px;
                             }
                             button{
-                                background-color: $secondary-color;
-                                color: white;
-                                border: $secondary-color;
-                                &:hover{
-                                    background-color: white;
-                                    color: #4b4b25;
-                                    border: 1px solid #4b4b25;
-                                    transform: translateY(-3px);
-                                    transition: 0.3s ease;
-                                }
+                                @include main-button;
                             }
                         }
                     }

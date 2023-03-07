@@ -197,3 +197,36 @@ footer {
         border: 1px solid #4b4b25;
         transform: translateY(-3px);
         transition: 0.3s ease; }
+
+.main__contacto div div div {
+  margin-bottom: 12px; }
+  .main__contacto div div div a img {
+    height: 60px; }
+
+.main__oportunidades div div {
+  margin-bottom: 16px; }
+  .main__oportunidades div div div input {
+    border: 1px solid #4b4b25; }
+    .main__oportunidades div div div input:focus {
+      border-color: #4b4b25;
+      outline: 0;
+      -webkit-box-shadow: inset 0 0px 1px #4b4b25, 0 0 8px #4b4b25;
+      box-shadow: inset 0 0px 1px #4b4b25, 0 0 8px #4b4b25; }
+  .main__oportunidades div div div form div select {
+    border: 1px solid #4b4b25; }
+    .main__oportunidades div div div form div select:focus {
+      border-color: #4b4b25;
+      outline: 0;
+      -webkit-box-shadow: inset 0 0px 1px #4b4b25, 0 0 8px #4b4b25;
+      box-shadow: inset 0 0px 1px #4b4b25, 0 0 8px #4b4b25; }
+
+.btn-primary {
+  background-color: #4b4b25;
+  color: white;
+  border: #4b4b25; }
+  .btn-primary:hover {
+    background-color: white;
+    color: #4b4b25;
+    border: 1px solid #4b4b25;
+    transform: translateY(-3px);
+    transition: 0.3s ease; }

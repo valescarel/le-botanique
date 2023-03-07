@@ -13,4 +13,25 @@ $min-width: 901px;
 
 $navbar-padding-y: 0px;
 
+@mixin flex-row{
+    display: flex;
+    flex-direction: row;
+}
 
+@mixin flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin main-button{
+    background-color: #4b4b25;
+    color: white;
+    border: #4b4b25;
+    &:hover{
+        background-color: white;
+        color: #4b4b25;
+        border: 1px solid #4b4b25;
+        transform: translateY(-3px);
+        transition: 0.3s ease;
+    }
+}
