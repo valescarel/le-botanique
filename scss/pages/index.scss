@@ -1,6 +1,7 @@
 .main__index{
     div{
         height: calc(100vh - 67.2px - 37px);
+        --bs-gutter-x: 0px;
         div{
             margin: 0px;
             div{
@@ -36,7 +37,7 @@
                     z-index: -1;
                     opacity: 0.8;
                     height: 60vh;
-                    width: calc(100vw - 24px);
+                    width: 100vw;
                     object-fit: cover;
                     object-position: center;
                 }

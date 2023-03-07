@@ -5,9 +5,13 @@ header{
     justify-content: space-between;
     padding: 5px 20px;
     border-bottom: 2px solid $secondary-color;
+    @media(max-width:$max-width){
+        padding: 5px;
+    }
     div{
         div{
-            div{
+            div{ 
+                padding: 0px;
                 a{
                     display: flex;
                     flex-direction: row;
@@ -58,9 +62,7 @@ header{
                 }
             }
             div{
-                nav{
-                    --bs-navbar-padding-y: 0rem;
-                    --bs-bg-opacity: 0 !important; 
+                nav{ 
                     background-color: $background-color;
                     div{
                         justify-content: flex-end !important;
@@ -72,6 +74,10 @@ header{
                             }
                         }
                     }
+                }
+                .navbar{
+                    --bs-navbar-padding-y: 0rem; 
+                    --bs-bg-opacity: 0;
                 }
             }
         }

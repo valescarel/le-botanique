@@ -74,16 +74,13 @@ footer p{
 
 /* nosotros */
 
-.carousel{
-    margin-bottom: 8px;
-}
+
 
 .main__nosotros--info{
-    padding-bottom: 12px;
+    
 }
 .carousel-item img{
-    height: 500px;
-    object-fit: cover;
+    
 }
 
 @media(max-width:767px){
@@ -94,19 +91,8 @@ footer p{
 /*menu*/
 
 
-.main__productos{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
 
 .main__guiaMenu ul{
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    font-size: 18px;
-    margin: 10px 0px;
-    padding: 0px;
 }
 
 
@@ -117,22 +103,18 @@ footer p{
 }
 
 
-.main__guiaMenu--item{
-    color: #4b4b25;
-    padding: 5px 10px;
-    border-left: 1px solid #4b4b25;
-    text-decoration: none;
-}
+
 
 
 .main__guiaMenu--item:hover{
     font-weight: bold;
 }
 
-@media(max-width:767px){
-    .main__guiaMenu--item{
-        padding: 3px;
-    }
+
+.main__productos{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .main__productos h3{

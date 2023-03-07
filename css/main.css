@@ -5,6 +5,9 @@
 h1, h2, h3, h4, h5 {
   font-weight: bold; }
 
+h1, h3 {
+  padding-top: 10px; }
+
 * {
   margin: 0px;
   text-decoration: none; }
@@ -16,20 +19,25 @@ header {
   justify-content: space-between;
   padding: 5px 20px;
   border-bottom: 2px solid #4b4b25; }
-  header div div div a {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-decoration: none; }
-    header div div div a img {
-      height: 50px; }
-    header div div div a h2 {
-      font-size: 30px;
-      color: #4b4b25;
-      margin: 0px; }
-      @media (max-width: 900px) {
-        header div div div a h2 {
-          font-size: 25px; } }
+  @media (max-width: 900px) {
+    header {
+      padding: 5px; } }
+  header div div div {
+    padding: 0px; }
+    header div div div a {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      text-decoration: none; }
+      header div div div a img {
+        height: 50px; }
+      header div div div a h2 {
+        font-size: 30px;
+        color: #4b4b25;
+        margin: 0px; }
+        @media (max-width: 900px) {
+          header div div div a h2 {
+            font-size: 25px; } }
   header div div div nav ul {
     list-style-type: none;
     display: flex;
@@ -53,8 +61,6 @@ header {
       header div div div nav ul {
         display: none; } }
   header div div div nav {
-    --bs-navbar-padding-y: 0rem;
-    --bs-bg-opacity: 0 !important;
     background-color: transparent; }
     header div div div nav div {
       justify-content: flex-end !important; }
@@ -64,6 +70,9 @@ header {
         @media (min-width: 901px) {
           header div div div nav div .navbar-toggler {
             display: none; } }
+  header div div div .navbar {
+    --bs-navbar-padding-y: 0rem;
+    --bs-bg-opacity: 0; }
 
 footer {
   padding: 5px 20px;
@@ -80,7 +89,8 @@ footer {
       text-decoration: none; }
 
 .main__index div {
-  height: calc(100vh - 67.2px - 37px); }
+  height: calc(100vh - 67.2px - 37px);
+  --bs-gutter-x: 0px; }
   .main__index div div {
     margin: 0px; }
     .main__index div div div {
@@ -114,9 +124,76 @@ footer {
         z-index: -1;
         opacity: 0.8;
         height: 60vh;
-        width: calc(100vw - 24px);
+        width: 100vw;
         object-fit: cover;
         object-position: center; }
 
-.main__nosotros {
-  background-color: blueviolet; }
+.main__nosotros div div div div {
+  margin-bottom: 8px; }
+  .main__nosotros div div div div div div img {
+    height: 500px;
+    object-fit: cover; }
+    @media (max-width: 767px) {
+      .main__nosotros div div div div div div img {
+        height: 300px; } }
+
+.main__menu div nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  font-size: 18px;
+  margin: 10px 0px;
+  padding: 0px; }
+  .main__menu div nav ul li {
+    padding: 5px 10px;
+    border-left: 1px solid #4b4b25; }
+    .main__menu div nav ul li a {
+      color: #4b4b25;
+      text-decoration: none; }
+    .main__menu div nav ul li:hover {
+      font-weight: bold;
+      transform: translateY(3px); }
+    .main__menu div nav ul li:nth-child(1) {
+      border-width: 0px; }
+    @media (max-width: 767px) {
+      .main__menu div nav ul li {
+        padding: 3px; } }
+
+.main__menu section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; }
+  .main__menu section div div h3 {
+    font-size: 25px;
+    padding-top: 16px; }
+  .main__menu section div div div .card {
+    width: 100%;
+    height: 500px;
+    border: 2px solid #78785f;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    -webkit-box-shadow: 10px 10px 10px 0px rgba(75, 75, 37, 0.77);
+    -moz-box-shadow: 10px 10px 10px 0px rgba(75, 75, 37, 0.77);
+    box-shadow: 10px 10px 10px 0px rgba(75, 75, 37, 0.77); }
+    .main__menu section div div div .card img {
+      height: 150px;
+      object-fit: cover; }
+    .main__menu section div div div .card div p {
+      height: 90px;
+      margin-bottom: 10px; }
+    .main__menu section div div div .card div p {
+      margin: 10px 0px; }
+    .main__menu section div div div .card div button {
+      background-color: #4b4b25;
+      color: white;
+      border: #4b4b25; }
+      .main__menu section div div div .card div button:hover {
+        background-color: white;
+        color: #4b4b25;
+        border: 1px solid #4b4b25;
+        transform: translateY(-3px);
+        transition: 0.3s ease; }

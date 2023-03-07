@@ -1,0 +1,88 @@
+.main__menu{
+    div{
+        nav{
+            ul{
+                list-style-type: none;
+                display: flex;
+                flex-direction: row;
+                font-size: 18px;
+                margin: 10px 0px;
+                padding: 0px;
+                li{
+                    padding: 5px 10px;
+                    border-left: 1px solid $secondary-color;
+                    a{
+                        color: $secondary-color;
+                        text-decoration: none;
+                    }
+                    &:hover{
+                        font-weight: bold;
+                        transform: translateY(3px);
+                    }
+                    &:nth-child(1){
+                        border-width: 0px;
+                    }
+                    @media(max-width:767px){
+                        padding: 3px;
+                    }
+                }
+            }
+        }
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        div{
+            div{
+                h3{
+                    font-size: 25px;
+                    padding-top: 16px;
+                }
+            }
+            div{
+                div{
+                    .card{
+                        width: 100%;
+                        height: 500px;
+                        border: 2px solid #78785f;
+                        border-radius: 10px;
+                        padding: 10px;
+                        margin: 10px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        -webkit-box-shadow: $box-shadow;
+                        -moz-box-shadow: $box-shadow;
+                        box-shadow: $box-shadow;
+                        img{
+                            height: 150px;
+                            object-fit: cover;
+                        }
+                        div{
+                            p{
+                                height: 90px;
+                                margin-bottom: 10px;
+                            }
+                            p{
+                                margin: 10px 0px;
+                            }
+                            button{
+                                background-color: $secondary-color;
+                                color: white;
+                                border: $secondary-color;
+                                &:hover{
+                                    background-color: white;
+                                    color: #4b4b25;
+                                    border: 1px solid #4b4b25;
+                                    transform: translateY(-3px);
+                                    transition: 0.3s ease;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
