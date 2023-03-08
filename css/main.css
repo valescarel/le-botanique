@@ -37,7 +37,7 @@ header {
         margin: 0px; }
         @media (max-width: 900px) {
           header div div div a h2 {
-            font-size: 25px; } }
+            font-size: 23px; } }
   header div div div nav ul {
     list-style-type: none;
     display: flex;
