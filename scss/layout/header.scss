@@ -4,11 +4,13 @@ header{
     justify-content: space-between;
     padding: 5px 20px;
     border-bottom: 2px solid $secondary-color;
-    @media(max-width:$max-width){
+    @include mediaquery-mobile{
         padding: 5px;
     }
     div{
         div{
+            justify-content: space-between;
+            align-items: center;
             div{ 
                 padding: 0px;
                 a{
@@ -22,14 +24,22 @@ header{
                         font-size: 30px;
                         color: $secondary-color;
                         margin: 0px;
-                        @media(max-width:$max-width){
+                        @include mediaquery-mobile{
                             font-size: 23px;
                         }
                     }
                 }
             }
-            div{
+            .header__nav--desktop{
+                --bs-gutter-x:0px;
+                @include mediaquery-mobile-header{
+                    width: 0px;
+                }
                 nav{
+                    @include mediaquery-mobile-header{
+                        display: none;
+                        width: 0px;
+                    }
                     ul{
                         list-style-type: none;
                         @include flex-row;
@@ -52,29 +62,24 @@ header{
                                 color: $secondary-color;
                             }
                         }
-                        @media(max-width:$max-width){
-                            display: none;
-                        }
                     }
                 }
             }
-            div{
+            .header__nav--mobile{
                 nav{ 
                     background-color: $background-color;
+                    --bs-navbar-padding-y: 0rem; 
+                    --bs-bg-opacity: 0;
+                    @include mediaquery-desktop-header{
+                        display: none;
+                    }
                     div{
                         justify-content: flex-end !important;
                         .navbar-toggler{
                             --bs-navbar-color: $secondary-color;
                             --bs-border-width: 2px;
-                            @media(min-width:$min-width){
-                                display: none;
-                            }
                         }
                     }
-                }
-                .navbar{
-                    --bs-navbar-padding-y: 0rem; 
-                    --bs-bg-opacity: 0;
                 }
             }
         }

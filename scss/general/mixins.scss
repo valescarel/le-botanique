@@ -1,0 +1,46 @@
+@mixin flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin main-button{
+    background-color: #4b4b25;
+    color: white;
+    border: #4b4b25;
+    &:hover{
+        background-color: white;
+        color: #4b4b25;
+        border: 1px solid #4b4b25;
+        transform: translateY(-3px);
+        transition: 0.3s ease;
+    }
+}
+
+@mixin mediaquery-mobile {
+    @media (max-width: 576px) {
+        @content;
+    }
+}
+
+@mixin mediaquery-desktop {
+    @media (min-width: 577px){
+        @content;
+    }
+}
+
+@mixin mediaquery-mobile-header {
+    @media (max-width: 824px) {
+        @content;
+    }
+}
+
+@mixin mediaquery-desktop-header {
+    @media (min-width: 825px){
+        @content;
+    }
+}

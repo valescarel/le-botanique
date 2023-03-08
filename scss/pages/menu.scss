@@ -21,7 +21,7 @@
                     &:nth-child(1){
                         border-width: 0px;
                     }
-                    @media(max-width:767px){
+                    @include mediaquery-mobile{
                         padding: 3px;
                     }
                 }

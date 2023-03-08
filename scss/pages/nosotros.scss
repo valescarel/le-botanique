@@ -1,8 +1,5 @@
 .main__nosotros{
     div{
-
-    }
-    div{
         div{
             div{
                 div{
@@ -12,7 +9,7 @@
                             img{
                                 height: 500px;
                                 object-fit: cover;
-                                @media(max-width:767px){
+                                @include mediaquery-mobile{
                                     height: 300px;
                             }
                             }

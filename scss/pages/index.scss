@@ -16,7 +16,7 @@
                 padding-right: 0px;
                 h1{
                     font-size: 80px;
-                    @media(max-width:767px){
+                    @include mediaquery-mobile{
                         font-size: 48px;
                     }
                 }
@@ -25,7 +25,7 @@
                     letter-spacing: 31.5px;
                     background-color: $tertiary-color;
                     padding-left: 31.5px;
-                    @media(max-width:767px){
+                    @include mediaquery-mobile{
                         padding-left: 17px;
                         font-size: 25px;
                         letter-spacing: 17px;

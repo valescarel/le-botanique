@@ -1,5 +1,10 @@
 .main__contacto{
     div{
+        iframe{
+            @include mediaquery-mobile{
+                height: 300px;
+            }
+        }
         div{
             div{
                 margin-bottom: 12px;
