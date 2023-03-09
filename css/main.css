@@ -166,6 +166,9 @@ footer {
     @media (max-width: 576px) {
       .main__menu div nav ul li {
         padding: 3px; } }
+  @media (max-width: 576px) {
+    .main__menu div nav ul {
+      font-size: 16px; } }
 
 .main__menu section {
   display: flex;
@@ -180,7 +183,7 @@ footer {
     border: 2px solid #78785f;
     border-radius: 10px;
     padding: 10px;
-    margin: 10px;
+    margin: 10px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -193,24 +196,31 @@ footer {
       @media (max-width: 576px) {
         .main__menu section div div div .card img {
           height: 150px; } }
-    .main__menu section div div div .card div h5 {
-      height: 48px; }
-    .main__menu section div div div .card div p {
-      height: 100px;
-      margin-bottom: 10px; }
-    .main__menu section div div div .card div .card-price {
-      height: 20px;
-      margin: 10px 0px; }
-    .main__menu section div div div .card div button {
-      background-color: #4b4b25;
-      color: white;
-      border: #4b4b25; }
-      .main__menu section div div div .card div button:hover {
-        background-color: white;
-        color: #4b4b25;
-        border: 1px solid #4b4b25;
-        transform: translateY(-3px);
-        transition: 0.3s ease; }
+    .main__menu section div div div .card div {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .main__menu section div div div .card div h5 {
+        height: 48px; }
+      .main__menu section div div div .card div p {
+        height: 100px;
+        margin-bottom: 10px; }
+      .main__menu section div div div .card div .card-price {
+        height: 20px;
+        margin: 10px 0px; }
+      .main__menu section div div div .card div button {
+        background-color: #4b4b25;
+        color: white;
+        border: #4b4b25;
+        padding: 6px 12px;
+        width: 100px;
+        padding: 6px 12px; }
+        .main__menu section div div div .card div button:hover {
+          background-color: white;
+          color: #4b4b25;
+          border: 1px solid #4b4b25;
+          transform: translateY(-3px);
+          transition: 0.3s ease; }
 
 .main__eventos div div {
   align-items: center; }
@@ -251,7 +261,8 @@ footer {
 .btn-primary {
   background-color: #4b4b25;
   color: white;
-  border: #4b4b25; }
+  border: #4b4b25;
+  padding: 6px 12px; }
   .btn-primary:hover {
     background-color: white;
     color: #4b4b25;
