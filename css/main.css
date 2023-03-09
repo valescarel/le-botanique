@@ -188,12 +188,18 @@ footer {
     -moz-box-shadow: 10px 10px 10px 0px rgba(75, 75, 37, 0.77);
     box-shadow: 10px 10px 10px 0px rgba(75, 75, 37, 0.77); }
     .main__menu section div div div .card img {
-      height: 150px;
+      height: 200px;
       object-fit: cover; }
+      @media (max-width: 576px) {
+        .main__menu section div div div .card img {
+          height: 150px; } }
+    .main__menu section div div div .card div h5 {
+      height: 48px; }
     .main__menu section div div div .card div p {
-      height: 90px;
+      height: 100px;
       margin-bottom: 10px; }
-    .main__menu section div div div .card div p {
+    .main__menu section div div div .card div .card-price {
+      height: 20px;
       margin: 10px 0px; }
     .main__menu section div div div .card div button {
       background-color: #4b4b25;

@@ -53,15 +53,22 @@
                         -moz-box-shadow: $box-shadow;
                         box-shadow: $box-shadow;
                         img{
-                            height: 150px;
+                            height: 200px;
                             object-fit: cover;
+                            @include mediaquery-mobile{
+                                height: 150px;
+                            }
                         }
                         div{
-                            p{
-                                height: 90px;
-                                margin-bottom: 10px;
+                            h5{
+                                height: 48px;
                             }
                             p{
+                                height: 100px;
+                                margin-bottom: 10px;
+                            }
+                            .card-price{
+                                height: 20px;
                                 margin: 10px 0px;
                             }
                             button{
