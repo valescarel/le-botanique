@@ -1,10 +1,19 @@
 .main__eventos{
+    max-width: 1440px;
+    margin: 0 auto;
+    font-size: 18px;
     div{
-        div{
+        section{
             align-items: center;
             &:nth-child(odd){
                 @include mediaquery-mobile{
                     flex-direction: column-reverse;
+                }
+            }
+            div{
+                h3{
+                    font-family: $secondary-font;
+                    font-size: 50px;
                 }
             }
             div{

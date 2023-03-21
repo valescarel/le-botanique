@@ -1,16 +1,22 @@
 .main__contacto{
     div{
-        iframe{
-            @include mediaquery-mobile{
-                height: 300px;
+        .mapa{
+            max-width: 100%;
+            iframe{
+                @include mediaquery-mobile{
+                    height: 300px;
+                }
             }
         }
-        div{
+        section{
+            max-width: 1400px;
+            margin: 0 auto;
             div{
                 margin-bottom: 12px;
                 a{
                     img{
                         height: 60px;
+                        filter: invert(24%) sepia(5%) saturate(4581%) hue-rotate(22deg) brightness(102%) contrast(84%);
                     }
                 }
             }
@@ -18,6 +24,8 @@
     }
 }
 .main__oportunidades--row{
+    max-width: 1400px;
+    margin: 0 auto;
     div{
         input{
             border: 1px solid $secondary-color;

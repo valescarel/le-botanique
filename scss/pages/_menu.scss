@@ -1,4 +1,7 @@
 .main__menu{
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-bottom: 15px;
     div{
         nav{
             ul{
@@ -31,17 +34,26 @@
             }
         }
     }
-    section{
+    .main__productos{
         @include flex-column;
         flex-wrap: wrap;
         div{
             div{
+                @include flex-row;
+                align-items: center;
+                justify-content: space-between;
                 h3{
-                    font-size: 25px;
+                    font-size: 70px;
                     padding-top: 16px;
+                    font-family: $secondary-font;
+                    margin-top: 3rem;
+                }
+                img{
+                    height: 60px;
+                    filter: invert(24%) sepia(5%) saturate(4581%) hue-rotate(22deg) brightness(102%) contrast(84%);
                 }
             }
-            div{
+            section{
                 div{
                     .card{
                         width: 100%;
@@ -56,6 +68,7 @@
                         -moz-box-shadow: $box-shadow;
                         box-shadow: $box-shadow;
                         img{
+                            filter: none;
                             height: 200px;
                             object-fit: cover;
                             @include mediaquery-mobile{

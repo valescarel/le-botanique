@@ -19,6 +19,7 @@ header{
                     text-decoration: none;
                     img{
                         height: 50px;
+                        filter: invert(24%) sepia(5%) saturate(4581%) hue-rotate(22deg) brightness(102%) contrast(84%);
                     }
                     h2{
                         font-size: 30px;
