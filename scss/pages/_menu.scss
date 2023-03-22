@@ -66,6 +66,12 @@
                         -webkit-box-shadow: $box-shadow;
                         -moz-box-shadow: $box-shadow;
                         box-shadow: $box-shadow;
+                        @include mediaquery-mobile{
+                            width: 85%;
+                            margin-left: auto;
+                            margin-right: auto;
+                            height: 450px;
+                        }
                         .card-img-top{
                             filter: none;
                             height: 200px;

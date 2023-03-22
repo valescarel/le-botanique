@@ -232,6 +232,12 @@ footer {
       -webkit-box-shadow: 10px 10px 10px 0px rgba(75, 75, 37, 0.77);
       -moz-box-shadow: 10px 10px 10px 0px rgba(75, 75, 37, 0.77);
       box-shadow: 10px 10px 10px 0px rgba(75, 75, 37, 0.77); }
+      @media (max-width: 576px) {
+        .main__menu .main__productos div section div .card {
+          width: 85%;
+          margin-left: auto;
+          margin-right: auto;
+          height: 450px; } }
       .main__menu .main__productos div section div .card .card-img-top {
         filter: none;
         height: 200px;
