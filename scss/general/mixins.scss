@@ -45,3 +45,16 @@
         @content;
     }
 }
+
+@mixin cursive-font {
+    font-size: 70px;
+    font-family: "Mr De Haviland";
+    padding-left: 10px;
+}
+
+@mixin leaf-shake {
+    &:hover{
+        animation: headShake;
+        animation-duration: 1s;
+    }
+}

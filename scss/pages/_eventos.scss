@@ -12,8 +12,7 @@
             }
             div{
                 h3{
-                    font-family: $secondary-font;
-                    font-size: 50px;
+                    @include cursive-font;
                 }
             }
             div{

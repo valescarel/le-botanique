@@ -43,12 +43,11 @@
                 align-items: center;
                 justify-content: space-between;
                 h3{
-                    font-size: 70px;
-                    padding-top: 16px;
-                    font-family: $secondary-font;
+                    @include cursive-font;
                     margin-top: 3rem;
                 }
                 img{
+                    @include leaf-shake;
                     height: 60px;
                     filter: invert(24%) sepia(5%) saturate(4581%) hue-rotate(22deg) brightness(102%) contrast(84%);
                 }
@@ -67,10 +66,11 @@
                         -webkit-box-shadow: $box-shadow;
                         -moz-box-shadow: $box-shadow;
                         box-shadow: $box-shadow;
-                        img{
+                        .card-img-top{
                             filter: none;
                             height: 200px;
                             object-fit: cover;
+                            animation: none;
                             @include mediaquery-mobile{
                                 height: 150px;
                             }
