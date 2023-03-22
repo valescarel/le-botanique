@@ -58,3 +58,32 @@
         animation-duration: 1s;
     }
 }
+
+@mixin button-to-top {
+    position:sticky;
+    bottom:20px;
+    margin-top:100vh;
+    z-index: 500;
+    text-decoration: none;
+    div{
+        @include flex-row;
+        justify-content: center;
+        align-items: center;
+        margin-left: calc(100vw - 85px);
+        height: 50px;
+        width: 50px;
+        border-radius: 25px;
+        background-color: $secondary-color;
+        opacity: 0.7;
+        &:hover{
+            background-color: white;
+            color: #4b4b25;
+            border: 1px solid #4b4b25;
+            transform: translateY(-3px);
+            transition: 0.3s ease;
+        }
+        img{
+            height: 40px;
+        }
+    }
+}

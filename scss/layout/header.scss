@@ -7,6 +7,8 @@ header{
     @include mediaquery-mobile{
         padding: 5px;
     }
+    z-index: 9999;
+    background-color: white;
     div{
         div{
             justify-content: space-between;
@@ -24,7 +26,7 @@ header{
                     }
                     h2{
                         font-size: 30px;
-                        color: $secondary-color;
+                        color: $main-color;
                         margin: 0px;
                         @include mediaquery-mobile{
                             font-size: 23px;

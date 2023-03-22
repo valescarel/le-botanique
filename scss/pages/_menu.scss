@@ -2,6 +2,7 @@
     max-width: 1440px;
     margin: 0 auto;
     margin-bottom: 15px;
+    display: inline;
     div{
         nav{
             ul{
@@ -106,4 +107,8 @@
             }
         }
     }
+    .button-to-top{
+        @include button-to-top;
+    }
 }
+

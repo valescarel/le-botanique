@@ -25,4 +25,7 @@
             }
         }
     }
+    .button-to-top{
+        @include button-to-top;
+    }
 }
