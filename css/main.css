@@ -277,7 +277,7 @@ footer {
   .main__menu .button-to-top {
     position: sticky;
     bottom: 20px;
-    margin-top: 100vh;
+    margin-top: 110vh;
     z-index: 500;
     text-decoration: none; }
     .main__menu .button-to-top div {
@@ -321,7 +321,7 @@ footer {
   .main__eventos .button-to-top {
     position: sticky;
     bottom: 20px;
-    margin-top: 100vh;
+    margin-top: 110vh;
     z-index: 500;
     text-decoration: none; }
     .main__eventos .button-to-top div {
